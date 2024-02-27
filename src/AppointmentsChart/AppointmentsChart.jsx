@@ -36,15 +36,15 @@ const AppointmentsChart = () => {
                 {patientHealthDetails.map((patient, index) => {
                   return (
                     <>
-                      <tr className=" bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                        <div className="flex flex-row justify-space-between items-center p-4">
+                      <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <div className="flex flex-row justify-space-between items-center p-4 m-2" style={{width:"200px"}}>
                           <img
                             src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
                             width={30}
                             height={30}
                           />
-                          <span className="m-2 flex flex-col">
-                            <span className="text-center">
+                          <div className="flex flex-col w-150">
+                            <div className="m-1">
                               <th
                                 scope="row"
                                 key={index}
@@ -52,67 +52,67 @@ const AppointmentsChart = () => {
                               >
                                 {patient.patient_name}
                               </th>
-                            </span>
+                            </div>
                             <span className="text-center">
                               {"+" + patient.mobile_number}
                             </span>
-                          </span>
+                          </div>
                         </div>
-                        <td className="px-6 py-4 ">
-                          <span className="flex">
-                            <span className="m-1">
+                        <td className="">
+                          <div className="flex flex-row justify-center" style={{width:"200px"}}>
+                            <div className="m-1">
                               <img
                                 src="https://cdn-icons-png.flaticon.com/128/2278/2278049.png"
                                 width={20}
                                 height={20}
                               />
-                            </span>
-                            <span className="m-1">
+                            </div>
+                            <div className="m-1">
                               {patient.appointment_date}
-                            </span>
-                          </span>
+                            </div>
+                          </div>
                         </td>
-                        <td className="px-6 py-4 ">
-                          <span className="flex">
-                            <span className="m-1">
+                        <td className="">
+                          <div className="flex flex-row justify-center" style={{width:"300px"}}>
+                            <div className="m-1">
                               <img
                                 src="https://cdn-icons-png.flaticon.com/128/66/66163.png"
                                 width={20}
                                 height={20}
                               />
-                            </span>
+                            </div>
                             <span className="m-1">
                               {patient.appointment_time}
                             </span>
-                          </span>
+                          </div>
                         </td>
-                        <td className="px-6 py-4 ">
-                          <span className="flex">
-                            <span className="m-1">
+                        <td className="">
+                          <div className="flex flex-row" style={{width:"200px"}}>
+                            <div className="m-1">
                               <img
                                 src="https://cdn-icons-png.flaticon.com/128/3334/3334338.png"
                                 width={20}
                                 height={20}
                               />
-                            </span>
+                            </div>
                             <span className="m-1">{patient.doctor}</span>
-                          </span>
+                          </div>
                         </td>
-                        <td className="px-6 py-4">
-                          <span class="bg-gray-400 text-gray-900 text-xs font-medium me-2 p-2 rounded dark:bg-gray-700 dark:text-gray-300">
+                        <td className="">
+                          <div class="bg-gray-400 text-gray-900 text-xs font-medium me-2 p-2 rounded dark:bg-gray-700 dark:text-gray-300" style={{width:"100px"}}>
                             {patient.injury}
-                          </span>
+                          </div>
                         </td>
                         <td className="px-6 py-4 ">
-                        <span className="flex">
-                            <span className="m-1">
+                        <div className="flex">
+                            <div className="m-1">
                               <img
                                 src="https://cdn-icons-png.flaticon.com/128/13680/13680757.png"
                                 width={20}
                                 height={20}
                               />
-                            </span>
-                          </span>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                     </>
