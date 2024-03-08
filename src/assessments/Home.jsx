@@ -14,7 +14,7 @@ const Home = () => {
               className="rounded-3xl object-cover inline-block w-full sm:w-64 sm:h-64  md:w-auto lg:w-auto xl:w-96"
               src={Card}
               alt="Not found"
-            />
+            />A
           </div>
 
           <div className="mt-5 ml-8 flex flex-col flex-wrap w-full md:w-auto">
