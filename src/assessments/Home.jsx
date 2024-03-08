@@ -8,17 +8,17 @@ const Home = () => {
   return (
     <div className="container mx-auto sm:w-full md:w-full lg:w-full xl:w-full">
       <div className="flex justify-center items-center mx-auto  h-screen sm:w-full  md:w-full lg:w-full xl:w-6/12" >
-        <div className="card p-6 flex flex-wrap bg-customColor border-2 border-black rounded-3xl shadow-lg sm:w-6/12 sm:justify-center md:w-9/12 md:justify-center lg:w-3/5 lg:justify-center xl:w-full">
+        <div className="card p-6 flex flex-wrap bg-customColor border-2 border-black justify-center rounded-3xl shadow-lg w-4/6 sm:w-4/5 sm:justify-center md:w-80 md:justify-center lg:w-3/5 lg:justify-center xl:w-full">
           <div className="flex flex-wrap w-3/5 justify-center items-center sm:w-auto md:w-96">
             <img
-              className="rounded-3xl object-cover inline-block w-auto sm:w-auto md:w-auto lg:w-auto xl:w-96"
+              className="rounded-3xl object-cover inline-block w-full sm:w-64 sm:h-64  md:w-auto lg:w-auto xl:w-96"
               src={Card}
               alt="Not found"
             />
           </div>
 
           <div className="mt-5 ml-8 flex flex-col flex-wrap w-full md:w-auto">
-            <div className="text-center shadow-lg w-48 bg-textbg p-2 rounded-lg">
+            <div className="flex flex-wrap  text-center shadow-lg w-full justify-center sm:w-full sm:justify-center md:w-32 md:justify-center lg:w-32 lg:justify-center xl:w-32 xl:justify-center bg-textbg p-2 rounded-lg">
               <h1 className="font-bold text-afterEffect">
                 After Effects
               </h1>
