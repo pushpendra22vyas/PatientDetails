@@ -1,11 +1,9 @@
+import React from 'react'
 
-import './App.css';
-import Home from './assessments/Home';
-
-function App() {
+const App = () => {
   return (
-    <Home/>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
